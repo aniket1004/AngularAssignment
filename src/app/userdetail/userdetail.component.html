@@ -8,11 +8,11 @@
         </ul>
         </div>
         <div class="card-body">
-        <h5 class="card-title"><a href="#" class="text-info" [routerLink]="['/update',userData]">{{userData.Name}}</a></h5>
-        <p class="card-text">{{userData.Email}}</p>
-        <p class="card-text">{{userData.DOB}}</p>
-        <p class="card-text">{{userData.country}}</p>
-        <p class="card-text">{{userData.image}}</p>
+        Name :<h5 class="card-title"><a href="#" class="text-info" [routerLink]="['/update',userData]">{{userData.Name}}</a></h5>
+        Email :<p class="card-text">{{userData.Email}}</p>
+        Age :<p class="card-text">{{ userData.DOB | findage}}</p>
+        Country :<p class="card-text">{{userData.country}}</p>
+        Image Name :<p class="card-text">{{userData.image}}</p>
         
         </div>
     </div>

@@ -9,6 +9,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AdminComponent } from './admin/admin.component';
 import { UserdetailComponent } from './userdetail/userdetail.component';
 import { UpdateuserComponent } from './updateuser/updateuser.component';
+import { FindagePipe } from './findage.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { UpdateuserComponent } from './updateuser/updateuser.component';
     AdminComponent,
     UserdetailComponent,
     UpdateuserComponent,
+    FindagePipe,
   ],
   imports: [
     BrowserModule,

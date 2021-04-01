@@ -12,7 +12,7 @@ export class SignupComponent implements OnInit {
   countries = [];
   name = '';
   email = '';
-  dob = '';
+  dob :Date;
   country = '';
   image_path : File;
   invalidName : boolean = false;
