@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card text-center  mt-5 border border-dark rounded-2 shadow-lg">
+        <div class="card-header text-center" style="border-bottom: 1px solid black;">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+            <h2 class="text-center">Person Details</h2>
+            </li>
+        </ul>
+        </div>
+        <div class="card-body">
+        <h5 class="card-title"><a href="#" class="text-info" [routerLink]="['/update',userData]">{{userData.Name}}</a></h5>
+        <p class="card-text">{{userData.Email}}</p>
+        <p class="card-text">{{userData.DOB}}</p>
+        <p class="card-text">{{userData.country}}</p>
+        <p class="card-text">{{userData.image}}</p>
+        
+        </div>
+    </div>
+</div>

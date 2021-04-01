@@ -1,0 +1,51 @@
+<div class="container mt-5">
+    <h2 class="text-primary mb-4" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Update Person</h2>
+    <div class="container p-3">
+        <form >
+
+            <div class="mb-3 row">
+                <label for="Name" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="Name" name="Name" value="{{ userData.Name }}" required>
+                
+            </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="Email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" name="Email" id="Email" value="{{ userData.Email }}" required>
+            </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="DOB" class="col-sm-2 col-form-label">Date of birth</label>
+                <div class="col-sm-10">
+                <input type="date" class="form-control" id="DOB" name="DOB" value="{{ userData.DOB }}" required>
+            </div>
+            </div>
+
+            <div class="mb-3 row">
+                <label for="country" class="col-sm-2 col-form-label">Country</label>
+                <div class="col-sm-10">
+                    <select [(ngModel)]="userData.country" id="country" name="country" class="form-control" size="1"  required>
+                        <option *ngFor="let c of countries" [ngValue]="c.name">{{ c.name }}</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="mb-3 row">
+                <label for="Image" class="col-sm-2 col-form-label">Select Image</label>
+                <div class="col-sm-10">
+                    <input class="form-control" accept="image/*" type="file" id="Image" required>
+                </div>
+            </div>              
+            
+            <div class="mb-3 row mt-5">
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-warning btn-block btn-lg">UPDATE</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

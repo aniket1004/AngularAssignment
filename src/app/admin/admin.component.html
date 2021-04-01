@@ -1,0 +1,21 @@
+<div class="table-responsive p-4 mt-3">
+    <h2 class="text-primary mb-4" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Student Details</h2>
+    <table class="table table-striped">
+        <thead class="table-light">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Signed up date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of studentdata;">
+                <td>{{ student.name }}</td>
+                <td>{{ student.email }}</td>
+                <td>{{ student.Age }}</td>
+                <td>{{ student.SignedUpDate }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
